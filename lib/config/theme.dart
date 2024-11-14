@@ -29,3 +29,8 @@ class MyTheme {
     elevation: 0.5,
   );
 }
+
+const cardTitle = TextStyle(
+  fontSize: 15,
+  fontWeight: FontWeight.w600,
+);

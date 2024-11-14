@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: MyTheme.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: BottomNav(),
+      home: const BottomNav(),
     );
   }
 }

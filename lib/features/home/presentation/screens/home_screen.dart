@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:yoga_client/common/widgets/custom_button.dart';
+
+import '../../../../config/constants/colors.dart';
+import '../widgets/info_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,21 +12,20 @@ class HomeScreen extends StatelessWidget {
     final deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Yoga App'),
+        title: const Text('Yoga App'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Card(
-              child: Text(
-                  'If you want to take a break from Quick, you can temporarily deactivate your account. If you want to permanently delete your Quick account, let us know.'),
-            )
-          ],
+        padding: EdgeInsets.symmetric(
+            horizontal: deviceWidth * 0.04, vertical: deviceWidth * 0.02),
+        child: ListView.builder(
+          itemCount: 20,
+          itemBuilder: (BuildContext context, int index) {
+            return  InfoCard();
+          },
         ),
       ),
     );
   }
 }
+
+
