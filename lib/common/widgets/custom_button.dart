@@ -16,6 +16,7 @@ class CustomButton extends StatelessWidget {
     final deviceWidth = MediaQuery.of(context).size.width;
     return OutlinedButton(
       style: OutlinedButton.styleFrom(
+          side: const BorderSide(color: ColorConst.lightTeal),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
       onPressed: onTap,
@@ -24,7 +25,6 @@ class CustomButton extends StatelessWidget {
           buttonName,
           style: const TextStyle(
             fontSize: 16,
-            fontFamily: 'Nunito',
             color: ColorConst.lightTeal,
           ),
         ),

@@ -35,9 +35,9 @@ class DetailScreen extends StatelessWidget {
             SizedBox(height: 10),
             Card(
               elevation: 1,
-              color: const Color.fromARGB(255, 226, 236, 238),
+              //  color: const Color.fromARGB(255, 226, 236, 238),
               child: Padding(
-                padding: const EdgeInsets.all(5.0),
+                padding: const EdgeInsets.all(9.0),
                 child: Text(
                     'Get a full refund if you cancel at least 24 hours before the class starts. Enjoy peace of mind with our flexible cacellation policy.'),
               ),

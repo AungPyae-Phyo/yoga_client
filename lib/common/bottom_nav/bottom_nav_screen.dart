@@ -19,7 +19,7 @@ class _BottomNavState extends State<BottomNav> {
       HomeScreen(),
       AddToCartScreen(),
     ];
-    void OnTapped(index) {
+    void onTap(index) {
       setState(() {
         selectedIndex = index;
       });
@@ -30,12 +30,12 @@ class _BottomNavState extends State<BottomNav> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         elevation: 20,
-        selectedItemColor: Colors.black,
+        //   selectedItemColor: Colors.black,
         showSelectedLabels: true,
         showUnselectedLabels: true,
-        onTap: OnTapped,
+        onTap: onTap,
         selectedIconTheme:
-            IconThemeData(color: ColorConst.lightTeal, size: 32.0),
+           const IconThemeData(color: ColorConst.lightTeal, size: 32.0),
         currentIndex: selectedIndex,
         items: const [
           BottomNavigationBarItem(

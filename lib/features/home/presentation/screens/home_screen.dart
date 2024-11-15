@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:yoga_client/common/widgets/custom_button.dart';
-
-import '../../../../config/constants/colors.dart';
 import '../widgets/info_card.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         child: ListView.builder(
           itemCount: 20,
           itemBuilder: (BuildContext context, int index) {
-            return  InfoCard();
+            return  const InfoCard();
           },
         ),
       ),

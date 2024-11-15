@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yoga_client/config/theme.dart';
 
 // Enum to represent difficulty levels
 enum DifficultyLevel {
@@ -28,9 +29,12 @@ class DifficulityLevel extends StatelessWidget {
     }
     return Card(
       elevation: 1,
-      color: const Color.fromARGB(255, 226, 236, 238),
-      child:
-          Padding(padding: const EdgeInsets.all(5), child: Text('#' + label)),
+      child: Padding(
+          padding: const EdgeInsets.all(5),
+          child: Text(
+            '# ' + label,
+            style: lable,
+          )),
     );
   }
 }
