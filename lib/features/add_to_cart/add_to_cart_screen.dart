@@ -6,11 +6,11 @@ class AddToCartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text('Add To Cart')
-        ],
+      appBar: AppBar(
+        centerTitle: false,
+        title: const Text('Add to cart'),
       ),
+      body: Column(),
     );
   }
 }

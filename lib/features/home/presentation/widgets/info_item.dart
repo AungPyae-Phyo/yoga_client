@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:yoga_client/features/details/detail_screen.dart';
+import 'package:yoga_client/features/course_detail/detail_screen.dart';
 
 import '../../../../common/widgets/custom_button.dart';
 import '../../../../config/constants/colors.dart';
-import '../../../../config/theme.dart';
+import '../../../../config/constants/text_styles.dart';
 
 class InfoItem extends StatelessWidget {
   const InfoItem({
@@ -15,15 +15,15 @@ class InfoItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'Course Name',
-          style: cardTitle,
+          style: TextStyles.cardTitle,
         ),
-        SizedBox(height: 12),
-        UpperRowItemInfo(),
-        SizedBox(height: 10),
+        const SizedBox(height: 12),
+        const UpperRowItemInfo(),
+        const SizedBox(height: 10),
         LowerRowItemInfo(),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         CustomButton(
             buttonName: 'View',
             onTap: () => Navigator.push(context,
@@ -44,7 +44,7 @@ class UpperRowItemInfo extends StatelessWidget {
       children: [
         Icon(
           Icons.calendar_month,
-          color: ColorConst.lightTeal,
+          color: ColorConst.darkAccent,
           size: 19,
         ),
         SizedBox(width: 4),
@@ -52,7 +52,7 @@ class UpperRowItemInfo extends StatelessWidget {
         SizedBox(width: 10),
         Icon(
           Icons.timer_outlined,
-          color: ColorConst.lightTeal,
+          color: ColorConst.darkAccent,
           size: 19,
         ),
         SizedBox(width: 4),
@@ -60,7 +60,7 @@ class UpperRowItemInfo extends StatelessWidget {
         SizedBox(width: 10),
         Icon(
           Icons.access_time,
-          color: ColorConst.lightTeal,
+          color: ColorConst.darkAccent,
           size: 19,
         ),
         SizedBox(width: 4),
@@ -81,7 +81,7 @@ class LowerRowItemInfo extends StatelessWidget {
       children: [
         Icon(
           Icons.gps_fixed_outlined,
-          color: ColorConst.lightTeal,
+          color: ColorConst.darkAccent,
           size: 19,
         ),
         SizedBox(width: 4),
@@ -89,7 +89,7 @@ class LowerRowItemInfo extends StatelessWidget {
         SizedBox(width: 10),
         Icon(
           Icons.people,
-          color: ColorConst.lightTeal,
+          color: ColorConst.darkAccent,
           size: 19,
         ),
         SizedBox(width: 4),
@@ -97,7 +97,7 @@ class LowerRowItemInfo extends StatelessWidget {
         SizedBox(width: 10),
         Icon(
           Icons.euro_sharp,
-          color: ColorConst.lightTeal,
+          color: ColorConst.darkAccent,
           size: 19,
         ),
         SizedBox(width: 4),
